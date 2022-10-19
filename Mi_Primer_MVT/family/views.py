@@ -17,7 +17,7 @@ def fun_create_family_member(request, name: str, last_name: str, age: int, relat
     return render(
         request=request,
         context=context_dict,
-        template_name='family/create_family_member.html',
+        template_name='family/create_family_member.html', # Acá le estas diciendo, que renderice la plantilla que está dentro de family/templates pero, no existia la carpeta y tampoco la template, por eso te dice que no la encuentra
     )
 
 def fun_show_family_members(request):
@@ -29,5 +29,5 @@ def fun_show_family_members(request):
     return render(
         request=request,
         context=context_dict,
-        template_name='family/list_family_members.html',
+        template_name='family/list_family_members.html', # Idem arriba
     )

@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'family', # Acá hay que avisarle al proyecto que agregamos una app.
 ]
 
 MIDDLEWARE = [
